@@ -1,0 +1,528 @@
+{
+  "id": "84937253-d881-4fa7-b231-673ff7b8b767",
+  "code": "Q2M2IH",
+  "diagram": {
+    "id": "diagram-1759267583838",
+    "name": "Generated UML Diagram",
+    "entities": [
+      {
+        "id": "hospital",
+        "name": "Hospital",
+        "type": "class",
+        "attributes": [
+          {
+            "id": "attr-hospital-0",
+            "name": "nombre",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-hospital-1",
+            "name": "dirección",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-hospital-2",
+            "name": "telefono",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          }
+        ],
+        "methods": [
+          {
+            "id": "method-hospital-0",
+            "name": "atenderPaciente",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          },
+          {
+            "id": "method-hospital-1",
+            "name": "administrarPersonal",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          }
+        ]
+      },
+      {
+        "id": "paciente",
+        "name": "Paciente",
+        "type": "class",
+        "attributes": [
+          {
+            "id": "attr-paciente-0",
+            "name": "nombre",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-paciente-1",
+            "name": "edad",
+            "type": "Integer",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-paciente-2",
+            "name": "historialClinico",
+            "type": "String",
+            "visibility": "private",
+            "isKey": false
+          }
+        ],
+        "methods": [
+          {
+            "id": "method-paciente-0",
+            "name": "actualizarHistorial",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          },
+          {
+            "id": "method-paciente-1",
+            "name": "consultarDatos",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          }
+        ]
+      },
+      {
+        "id": "medico",
+        "name": "Médico",
+        "type": "class",
+        "attributes": [
+          {
+            "id": "attr-medico-0",
+            "name": "nombre",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-medico-1",
+            "name": "especialidad",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-medico-2",
+            "name": "horario",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          }
+        ],
+        "methods": [
+          {
+            "id": "method-medico-0",
+            "name": "atenderPaciente",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          },
+          {
+            "id": "method-medico-1",
+            "name": "administrarMedicamentos",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          }
+        ]
+      },
+      {
+        "id": "personalAdministrativo",
+        "name": "Personal Administrativo",
+        "type": "class",
+        "attributes": [
+          {
+            "id": "attr-personalAdministrativo-0",
+            "name": "nombre",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-personalAdministrativo-1",
+            "name": "cargo",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-personalAdministrativo-2",
+            "name": "salario",
+            "type": "Double",
+            "visibility": "private",
+            "isKey": false
+          }
+        ],
+        "methods": [
+          {
+            "id": "method-personalAdministrativo-0",
+            "name": "administrarDocumentos",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          },
+          {
+            "id": "method-personalAdministrativo-1",
+            "name": "realizarReportes",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          }
+        ]
+      },
+      {
+        "id": "medicoEspecializado",
+        "name": "Médico Especializado",
+        "type": "class",
+        "attributes": [
+          {
+            "id": "attr-medicoEspecializado-0",
+            "name": "nombre",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-medicoEspecializado-1",
+            "name": "especialidad",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-medicoEspecializado-2",
+            "name": "horario",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          }
+        ],
+        "methods": [
+          {
+            "id": "method-medicoEspecializado-0",
+            "name": "atenderPaciente",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          },
+          {
+            "id": "method-medicoEspecializado-1",
+            "name": "administrarMedicamentos",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          }
+        ]
+      },
+      {
+        "id": "medicamento",
+        "name": "Medicamento",
+        "type": "class",
+        "attributes": [
+          {
+            "id": "attr-medicamento-0",
+            "name": "nombre",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-medicamento-1",
+            "name": "dosage",
+            "type": "String",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-medicamento-2",
+            "name": "indicaciones",
+            "type": "String",
+            "visibility": "private",
+            "isKey": false
+          }
+        ],
+        "methods": [
+          {
+            "id": "method-medicamento-0",
+            "name": "administrarDosis",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          },
+          {
+            "id": "method-medicamento-1",
+            "name": "consultarInformacion",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          }
+        ]
+      },
+      {
+        "id": "consulta",
+        "name": "Consulta",
+        "type": "class",
+        "attributes": [
+          {
+            "id": "attr-consulta-0",
+            "name": "fecha",
+            "type": "Date",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-consulta-1",
+            "name": "resultado",
+            "type": "String",
+            "visibility": "private",
+            "isKey": false
+          }
+        ],
+        "methods": [
+          {
+            "id": "method-consulta-0",
+            "name": "realizarDiagnostico",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          },
+          {
+            "id": "method-consulta-1",
+            "name": "generarInforme",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          }
+        ]
+      },
+      {
+        "id": "historialClinico",
+        "name": "Historial Clinico",
+        "type": "class",
+        "attributes": [
+          {
+            "id": "attr-historialClinico-0",
+            "name": "paciente",
+            "type": "Paciente",
+            "visibility": "public",
+            "isKey": false
+          },
+          {
+            "id": "attr-historialClinico-1",
+            "name": "consultas",
+            "type": "Consulta",
+            "visibility": "public",
+            "isKey": false
+          }
+        ],
+        "methods": [
+          {
+            "id": "method-historialClinico-0",
+            "name": "actualizarInformacion",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          },
+          {
+            "id": "method-historialClinico-1",
+            "name": "consultarDatos",
+            "returnType": "String",
+            "visibility": "public",
+            "parameters": [],
+            "isStatic": false,
+            "isAbstract": false
+          }
+        ]
+      },
+      {
+        "id": "entity-1759268380784",
+        "name": "NewClass",
+        "type": "class",
+        "attributes": [],
+        "methods": [],
+        "position": {
+          "x": 200,
+          "y": -70
+        }
+      }
+    ],
+    "relations": [
+      {
+        "id": "rel1",
+        "source": "hospital",
+        "target": "paciente",
+        "type": "association",
+        "sourceCardinality": {
+          "min": 0,
+          "max": "unlimited",
+          "label": "*"
+        },
+        "targetCardinality": {
+          "min": 0,
+          "max": "unlimited",
+          "label": "*"
+        }
+      },
+      {
+        "id": "rel2",
+        "source": "hospital",
+        "target": "medico",
+        "type": "association",
+        "sourceCardinality": {
+          "min": 0,
+          "max": "unlimited",
+          "label": "*"
+        },
+        "targetCardinality": {
+          "min": 0,
+          "max": "unlimited",
+          "label": "*"
+        }
+      },
+      {
+        "id": "rel3",
+        "source": "hospital",
+        "target": "personalAdministrativo",
+        "type": "association",
+        "sourceCardinality": {
+          "min": 0,
+          "max": "unlimited",
+          "label": "*"
+        },
+        "targetCardinality": {
+          "min": 0,
+          "max": "unlimited",
+          "label": "*"
+        }
+      },
+      {
+        "id": "rel4",
+        "source": "medico",
+        "target": "paciente",
+        "type": "association",
+        "sourceCardinality": {
+          "min": 0,
+          "max": "unlimited",
+          "label": "*"
+        },
+        "targetCardinality": {
+          "min": 0,
+          "max": "unlimited",
+          "label": "*"
+        }
+      },
+      {
+        "id": "rel5",
+        "source": "medico",
+        "target": "medicamento",
+        "type": "association",
+        "sourceCardinality": {
+          "min": 0,
+          "max": "unlimited",
+          "label": "*"
+        },
+        "targetCardinality": {
+          "min": 0,
+          "max": "unlimited",
+          "label": "*"
+        }
+      },
+      {
+        "id": "rel6",
+        "source": "medico",
+        "target": "consulta",
+        "type": "association",
+        "sourceCardinality": {
+          "min": 0,
+          "max": "unlimited",
+          "label": "*"
+        },
+        "targetCardinality": {
+          "min": 0,
+          "max": "unlimited",
+          "label": "*"
+        }
+      },
+      {
+        "id": "rel7",
+        "source": "paciente",
+        "target": "historialClinico",
+        "type": "composition",
+        "sourceCardinality": {
+          "min": 1,
+          "max": 1,
+          "label": "1"
+        },
+        "targetCardinality": {
+          "min": 1,
+          "max": 1,
+          "label": "1"
+        }
+      },
+      {
+        "id": "rel8",
+        "source": "consulta",
+        "target": "historialClinico",
+        "type": "composition",
+        "sourceCardinality": {
+          "min": 1,
+          "max": 1,
+          "label": "1"
+        },
+        "targetCardinality": {
+          "min": 1,
+          "max": 1,
+          "label": "1"
+        }
+      }
+    ],
+    "metadata": {
+      "created": "2025-09-30T21:26:23.838Z",
+      "modified": "2025-09-30T21:39:48.533Z",
+      "version": "1.0.0"
+    }
+  },
+  "createdAt": "2025-09-30T21:13:10.056Z",
+  "updatedAt": "2025-09-30T21:39:48.534Z"
+}

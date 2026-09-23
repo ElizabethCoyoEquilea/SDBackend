@@ -1,0 +1,61 @@
+{
+  "id": "77ad3597-a55c-4c4e-b0c9-120c293f00a5",
+  "code": "D5XPOU",
+  "diagram": {
+    "id": "default-diagram",
+    "name": "Collaborative Diagram",
+    "entities": [
+      {
+        "id": "entity-1759300772382",
+        "name": "NewClass",
+        "type": "class",
+        "attributes": [],
+        "methods": [],
+        "position": {
+          "x": 200,
+          "y": 150
+        }
+      },
+      {
+        "id": "entity-1759300809792",
+        "name": "NewClass",
+        "type": "class",
+        "attributes": [],
+        "methods": [],
+        "position": {
+          "x": 580,
+          "y": 170
+        }
+      }
+    ],
+    "relations": [
+      {
+        "id": "relation-1759300818623",
+        "source": "entity-1759300772382",
+        "target": "entity-1759300809792",
+        "type": "composition",
+        "sourceCardinality": {
+          "min": 1,
+          "max": 1,
+          "label": "1"
+        },
+        "targetCardinality": {
+          "min": 1,
+          "max": 1,
+          "label": "1"
+        },
+        "isNavigable": {
+          "source": true,
+          "target": true
+        }
+      }
+    ],
+    "metadata": {
+      "created": "2025-10-01T06:37:20.350Z",
+      "modified": "2025-10-01T06:40:18.623Z",
+      "version": "1.0.0"
+    }
+  },
+  "createdAt": "2025-10-01T06:37:20.350Z",
+  "updatedAt": "2025-10-01T06:40:18.624Z"
+}

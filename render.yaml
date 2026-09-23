@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: uml-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Preferir la URL interna de Render si tienes la DB en Render
+      # En el panel de Render, conecta este servicio a tu servicio de PostgreSQL
+      # Render inyecta las variables DATABASE_URL (externa) e INTERNAL_DATABASE_URL (interna)
+      # No hardcodear credenciales aquí.
+      - key: INTERNAL_DATABASE_URL
+        fromDatabase: 
+          name: uml-db
+          property: internalConnectionString
+      # Fallback para conexiones externas (TLS)
+      - key: DATABASE_URL
+        fromDatabase:
+          name: uml-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
