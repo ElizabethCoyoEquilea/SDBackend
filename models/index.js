@@ -43,10 +43,21 @@ if (process.env.INTERNAL_DATABASE_URL) {
 } else {
   console.log('🔍 [DB Config] Using individual variables (development)');
   // En desarrollo local, usar variables individuales
+  const dbHost = process.env.DB_HOST || 'localhost';
+  const useSsl = process.env.DB_SSL === 'true' || !['localhost', '127.0.0.1'].includes(dbHost);
+
   sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASS, {
-    host: process.env.DB_HOST || 'localhost',
+    host: dbHost,
     port: process.env.DB_PORT || 5432,
     dialect: 'postgres',
+    ...(useSsl && {
+      dialectOptions: {
+        ssl: {
+          require: true,
+          rejectUnauthorized: false
+        }
+      }
+    }),
     logging: console.log,
     pool: {
       max: 5,
